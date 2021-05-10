@@ -21,7 +21,7 @@ namespace var16zad6
     {
         int SumMonth;
 
-        public bezlemith(int sum, string Input) : base(Input)
+        public bezlemith(string Input, int sum) : base(Input)
         {
             SumMonth1 = sum;
         }
@@ -30,7 +30,7 @@ namespace var16zad6
 
         public override string PrintInfo()
         {
-            string str = "sum " + SumMonth1 + "\n" + "name:" + NameTarrif1;
+            string str = "Сумма " + SumMonth1 + "\n" + "Название тарифа: " + NameTarrif1;
             return str;
         }
     }
@@ -47,7 +47,7 @@ namespace var16zad6
 
         public override string PrintInfo()
         {
-            string str = "Count minute " + KolMin + "\n" + "name:" + NameTarrif1;
+            string str = "Минут/Руб " + KolMin + "\n" + "Название тарифа: " + NameTarrif1;
             return str;
         }
     }

@@ -28,7 +28,7 @@ namespace zadanie7
                         name = Console.ReadLine(); 
                         if(menu == 1)
                         {
-                            Contain.add(new bezlemith(sum, name));
+                            Contain.add(new bezlemith(name, sum));
                         }
                         else
                         {

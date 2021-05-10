@@ -18,15 +18,17 @@ namespace zadanie7
         }
         public bool Delete(int index)
         {
-            TarriffMass[index] = null;
             if (index != Head)
             {
                 for (int j = index; j < Head; j++)
                 {
                     TarriffMass[j] = TarriffMass[j + 1];
                 }
+                TarriffMass[Head] = null;
 
             }
+            else TarriffMass[Head] = null;
+            Head--;
             return true;
         }
         public string Print(int index)
